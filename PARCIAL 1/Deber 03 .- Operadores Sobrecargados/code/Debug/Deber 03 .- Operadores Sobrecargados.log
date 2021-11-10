@@ -1,0 +1,9 @@
+﻿  App.cpp
+F:\NUEVO SEMESTRE\ESTRUCTURA DE DATOS-7167\copia Estructuras de Datos\datastructure-group1\PARCIAL 1\Deber 03 .- Operadores Sobrecargados\App.cpp(35,14): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+F:\NUEVO SEMESTRE\ESTRUCTURA DE DATOS-7167\copia Estructuras de Datos\datastructure-group1\PARCIAL 1\Deber 03 .- Operadores Sobrecargados\App.cpp(41,14): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+F:\NUEVO SEMESTRE\ESTRUCTURA DE DATOS-7167\copia Estructuras de Datos\datastructure-group1\PARCIAL 1\Deber 03 .- Operadores Sobrecargados\App.cpp(47,14): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+  Datos.cpp
+F:\NUEVO SEMESTRE\ESTRUCTURA DE DATOS-7167\copia Estructuras de Datos\datastructure-group1\PARCIAL 1\Deber 03 .- Operadores Sobrecargados\Datos.cpp(31,12): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+  Operaciones.cpp
+  Generando código...
+  Deber 03 .- Operadores Sobrecargados.vcxproj -> F:\NUEVO SEMESTRE\ESTRUCTURA DE DATOS-7167\copia Estructuras de Datos\datastructure-group1\PARCIAL 1\Deber 03 .- Operadores Sobrecargados\Debug\Deber 03 .- Operadores Sobrecargados.exe

@@ -1,0 +1,18 @@
+﻿  Main.cpp
+C:\Users\theda\OneDrive\Escritorio\DolaresAEuros 03-11-2021\Operacion.cpp(43,33): warning C4244: 'return': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\theda\OneDrive\Escritorio\DolaresAEuros 03-11-2021\Operacion.cpp(40): message : while compiling class template member function 'T Operacion<T>::dolares_euros(Datos<T> &)'
+          with
+          [
+              T=float
+          ]
+C:\Users\theda\OneDrive\Escritorio\DolaresAEuros 03-11-2021\Main.cpp(42): message : see reference to function template instantiation 'T Operacion<T>::dolares_euros(Datos<T> &)' being compiled
+          with
+          [
+              T=float
+          ]
+C:\Users\theda\OneDrive\Escritorio\DolaresAEuros 03-11-2021\Main.cpp(28): message : see reference to class template instantiation 'Operacion<float>' being compiled
+  DolaresAEuros 03-11-2021.vcxproj -> C:\Users\theda\OneDrive\Escritorio\DolaresAEuros 03-11-2021\Debug\DolaresAEuros 03-11-2021.exe

@@ -1,0 +1,21 @@
+﻿  Datos.cpp
+  Main.cpp
+C:\Users\theda\OneDrive\Escritorio\KilosALibras 01-01-2021\Operacion.cpp(43,32): warning C4244: 'return': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\theda\OneDrive\Escritorio\KilosALibras 01-01-2021\Operacion.cpp(40): message : while compiling class template member function 'T Operacion<T>::libras(Datos<T> &)'
+          with
+          [
+              T=float
+          ]
+C:\Users\theda\OneDrive\Escritorio\KilosALibras 01-01-2021\Main.cpp(42): message : see reference to function template instantiation 'T Operacion<T>::libras(Datos<T> &)' being compiled
+          with
+          [
+              T=float
+          ]
+C:\Users\theda\OneDrive\Escritorio\KilosALibras 01-01-2021\Main.cpp(28): message : see reference to class template instantiation 'Operacion<float>' being compiled
+  Operacion.cpp
+  Generating Code...
+  KilosALibras  01-01-2021.vcxproj -> C:\Users\theda\OneDrive\Escritorio\KilosALibras 01-01-2021\Debug\KilosALibras 01-11-2021.exe

@@ -1,0 +1,4 @@
+C:\Users\JOSUE\Desktop\Project1\Debug\Project1.exe
+C:\Users\theda\OneDrive\Documents\ESPE\Software\datastructure-group1\PARCIAL 1\01.- Operacion Con Fracciones\Code\Debug\Project1.exe
+C:\Users\Jhoel PC-X\ESTRUCTURA DE DATOS\datastructure-group1\PARCIAL 1\01.- Operacion Con Fracciones\Code\Debug\Project1.exe
+F:\NUEVO SEMESTRE\ESTRUCTURA DE DATOS-7167\copia Estructuras de Datos\datastructure-group1\PARCIAL 1\01.- Operacion Con Fracciones\Code\Debug\Project1.exe
