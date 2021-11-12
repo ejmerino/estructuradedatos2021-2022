@@ -1,0 +1,5 @@
+﻿  App.cpp
+  Metodos.cpp
+  Generando código...
+MSVCRTD.lib(exe_main.obj) : error LNK2019: símbolo externo _main sin resolver al que se hace referencia en la función "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\JOSUE\Desktop\Deber 05 - Memoria Dinámica\Debug\Deber 05 - Memoria Dinámica.exe : fatal error LNK1120: 1 externos sin resolver
