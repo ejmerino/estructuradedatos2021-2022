@@ -1,7 +1,9 @@
 ﻿  App.cpp
-C:\Users\JOSUE\Desktop\Deber 07 - Operaciones con Matrices\App.cpp(12,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-C:\Users\JOSUE\Desktop\Deber 07 - Operaciones con Matrices\App.cpp(19,9): warning C4101: 'col_2': variable local sin referencia
-C:\Users\JOSUE\Desktop\Deber 07 - Operaciones con Matrices\App.cpp(18,9): warning C4101: 'col_1': variable local sin referencia
-C:\Users\JOSUE\Desktop\Deber 07 - Operaciones con Matrices\App.cpp(20,9): warning C4101: 'row_1': variable local sin referencia
-C:\Users\JOSUE\Desktop\Deber 07 - Operaciones con Matrices\App.cpp(21,9): warning C4101: 'row_2': variable local sin referencia
-  Deber 07 - Operaciones con Matrices.vcxproj -> C:\Users\JOSUE\Desktop\Deber 07 - Operaciones con Matrices\Debug\Deber 07 - Operaciones con Matrices.exe
+C:\Users\Jhoel PC-X\ESTRUCTURA DE DATOS\estructuradedatos2021-2022\PARCIAL 1\Deber 07 - Operaciones con Matrices\App.cpp(12,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\Jhoel PC-X\ESTRUCTURA DE DATOS\estructuradedatos2021-2022\PARCIAL 1\Deber 07 - Operaciones con Matrices\App.cpp(19,9): warning C4101: 'col_2': variable local sin referencia
+C:\Users\Jhoel PC-X\ESTRUCTURA DE DATOS\estructuradedatos2021-2022\PARCIAL 1\Deber 07 - Operaciones con Matrices\App.cpp(18,9): warning C4101: 'col_1': variable local sin referencia
+C:\Users\Jhoel PC-X\ESTRUCTURA DE DATOS\estructuradedatos2021-2022\PARCIAL 1\Deber 07 - Operaciones con Matrices\App.cpp(20,9): warning C4101: 'row_1': variable local sin referencia
+C:\Users\Jhoel PC-X\ESTRUCTURA DE DATOS\estructuradedatos2021-2022\PARCIAL 1\Deber 07 - Operaciones con Matrices\App.cpp(21,9): warning C4101: 'row_2': variable local sin referencia
+  Matriz.cpp
+  Generando código...
+  Deber 07 - Operaciones con Matrices.vcxproj -> C:\Users\Jhoel PC-X\ESTRUCTURA DE DATOS\estructuradedatos2021-2022\PARCIAL 1\Deber 07 - Operaciones con Matrices\Debug\Deber 07 - Operaciones con Matrices.exe

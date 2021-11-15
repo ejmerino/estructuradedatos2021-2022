@@ -1,0 +1,8 @@
+﻿  App.cpp
+C:\Users\Jhoel PC-X\ESTRUCTURA DE DATOS\estructuradedatos2021-2022\PARCIAL 1\Deber 07 - Operaciones con Matrices\code\App.cpp(28,32): warning C4101: 'col_2': variable local sin referencia
+C:\Users\Jhoel PC-X\ESTRUCTURA DE DATOS\estructuradedatos2021-2022\PARCIAL 1\Deber 07 - Operaciones con Matrices\code\App.cpp(28,25): warning C4101: 'col_1': variable local sin referencia
+C:\Users\Jhoel PC-X\ESTRUCTURA DE DATOS\estructuradedatos2021-2022\PARCIAL 1\Deber 07 - Operaciones con Matrices\code\App.cpp(28,39): warning C4101: 'row_1': variable local sin referencia
+C:\Users\Jhoel PC-X\ESTRUCTURA DE DATOS\estructuradedatos2021-2022\PARCIAL 1\Deber 07 - Operaciones con Matrices\code\App.cpp(28,46): warning C4101: 'row_2': variable local sin referencia
+  Matriz.cpp
+  Generando código...
+  Deber 07 - Operaciones con Matrices.vcxproj -> C:\Users\Jhoel PC-X\ESTRUCTURA DE DATOS\estructuradedatos2021-2022\PARCIAL 1\Deber 07 - Operaciones con Matrices\code\x64\Debug\Deber 07 - Operaciones con Matrices.exe
