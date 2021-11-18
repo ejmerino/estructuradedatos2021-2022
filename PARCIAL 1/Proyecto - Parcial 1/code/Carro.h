@@ -27,8 +27,6 @@ public:
 	void to_string(void);
 	void generar_dueno(void);
 	void registro(void);
-
-protected:
 private:
 	std::string marca;
 	std::string placa;

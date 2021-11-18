@@ -14,25 +14,27 @@
 #include <iostream>
 #include <stdlib.h>
 
+using namespace std;
+
 Carro::Carro() {}
 Carro::~Carro() {}
 
-std::string Carro::getMarca(void)
+string Carro::getMarca(void)
 {
 	return marca;
 }
 
-void Carro::setMarca(std::string newMarca)
+void Carro::setMarca(string newMarca)
 {
 	marca = newMarca;
 }
 
-std::string Carro::getPlaca(void)
+string Carro::getPlaca(void)
 {
 	return placa;
 }
 
-void Carro::setPlaca(std::string newPlaca)
+void Carro::setPlaca(string newPlaca)
 {
 	placa = newPlaca;
 }
@@ -49,7 +51,7 @@ void Carro::setAno(int newAno)
 
 void Carro::to_string(void)
 {
-
+	cout << "\nEl carro es de la marca" << getMarca() << "tiene la placa : " << getPlaca() << " y es del año: " << getAno();
 }
 
 void Carro::generar_dueno(void)

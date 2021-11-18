@@ -11,24 +11,38 @@
 */
 
 #pragma once
+#pragma warning(disable : 4996)
 #include <iostream>
+#include <string.h>
 #include <stdlib.h>
-
+using namespace std;
 class Persona{
 public:
-	Persona();
-	~Persona();
-	int getId(void);
-	void setId(int newId);
-	int getEdad(void);
-	void setEdad(int newEdad);
-	std::string getCorreo(void);
-	void setCorreo(std::string newCorreo);
-	void to_string(void);
-	void generar_correo(void);
-protected:
 private:
-	int Id;
-	int edad;
-	std::string correo;
+	char* id;
+	char* first_name;
+	char* surname;
+	char* last_name;	
+	char* email;
+	float value = 0.0f;
+	
+public:
+	Persona() = default;
+	Persona(const Persona&);
+	void set_id(char[]);
+	char* get_id();
+	void set_first_name(char[]);
+	char* get_first_name();
+	void set_surname(char[]);
+	char* get_surname();
+	void set_last_name(char[]);
+	char* get_last_name();
+	void set_email(char[]);
+	char* get_email();
+	void set_value(float);
+	float get_value();
+	friend std::ostream& operator << (std::ostream & os, Persona & p);
+	friend std::istream& operator >> (std::istream & is, Persona & p);
+	bool operator== (Persona & p);
+	~Persona();
 };
