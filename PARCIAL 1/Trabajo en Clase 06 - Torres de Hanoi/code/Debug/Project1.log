@@ -1,0 +1,7 @@
+﻿  App.cpp
+C:\Users\JOSUE\Desktop\Project1\App.cpp(16,7): warning C4101: 'a': variable local sin referencia
+C:\Users\JOSUE\Desktop\Project1\App.cpp(16,10): warning C4101: 'b': variable local sin referencia
+C:\Users\JOSUE\Desktop\Project1\App.cpp(16,13): warning C4101: 'c': variable local sin referencia
+  Hanoi.cpp
+  Generando código...
+  Project1.vcxproj -> C:\Users\JOSUE\Desktop\Project1\Debug\Project1.exe
