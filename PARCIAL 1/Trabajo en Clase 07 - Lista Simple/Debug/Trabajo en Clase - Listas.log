@@ -1,0 +1,8 @@
+﻿  App.cpp
+C:\Users\JOSUE\Desktop\Trabajo en Clase - Listas\Nodo.cpp(5,13): error C2995: 'T Nodo<T>::getValor(void)': ya se ha definido la plantilla de función
+C:\Users\JOSUE\Desktop\Trabajo en Clase - Listas\Nodo.h(10): message : vea la declaración de 'Nodo<T>::getValor'
+C:\Users\JOSUE\Desktop\Trabajo en Clase - Listas\Nodo.cpp(10,15): error C2995: 'void Nodo<T>::setValor(T)': ya se ha definido la plantilla de función
+C:\Users\JOSUE\Desktop\Trabajo en Clase - Listas\Nodo.h(11): message : vea la declaración de 'Nodo<T>::setValor'
+  Lista.cpp
+  Nodo.cpp
+  Generando código...
