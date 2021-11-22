@@ -1,7 +1,8 @@
 ﻿  App.cpp
+C:\Users\JOSUE\Desktop\Estructura de Datos 2021-2022\estructuradedatos2021-2022\PARCIAL 1\Deber 09 - Lista Doblemente Enlazada\code\Nodo.cpp(16,10): error C2995: 'Nodo<T>::Nodo(void)': ya se ha definido la plantilla de función
+C:\Users\JOSUE\Desktop\Estructura de Datos 2021-2022\estructuradedatos2021-2022\PARCIAL 1\Deber 09 - Lista Doblemente Enlazada\code\Nodo.h(25): message : vea la declaración de 'Nodo<T>::Nodo'
   ListaDoble.cpp
+C:\Users\JOSUE\Desktop\Estructura de Datos 2021-2022\estructuradedatos2021-2022\PARCIAL 1\Deber 09 - Lista Doblemente Enlazada\code\Nodo.cpp(16,10): error C2995: 'Nodo<T>::Nodo(void)': ya se ha definido la plantilla de función
+C:\Users\JOSUE\Desktop\Estructura de Datos 2021-2022\estructuradedatos2021-2022\PARCIAL 1\Deber 09 - Lista Doblemente Enlazada\code\Nodo.h(25): message : vea la declaración de 'Nodo<T>::Nodo'
   Nodo.cpp
-  Validacion.cpp
   Generando código...
-F:\NUEVO SEMESTRE\ESTRUCTURA DE DATOS-7167\copia Estructuras de Datos\estructuradedatos2021-2022\PARCIAL 1\Deber 09 - Lista Doblemente Enlazada\code\Validacion.cpp(28): warning C4172: devolución de dirección de la variable local o temporal: dato
-  Deber - Listas Dobles Enlazadas.vcxproj -> F:\NUEVO SEMESTRE\ESTRUCTURA DE DATOS-7167\copia Estructuras de Datos\estructuradedatos2021-2022\PARCIAL 1\Deber 09 - Lista Doblemente Enlazada\code\x64\Debug\Deber - Listas Dobles Enlazadas.exe

@@ -71,7 +71,7 @@ void ListaDoble<T>::borrar_cola() {
     }
     if (cabeza->siguiente == NULL) {
         cabeza = NULL;
-        std::cout << "Ultimo elemnto removido." << std::endl;
+        std::cout << "Ultimo elemento removido." << std::endl;
         return;
     }
 
@@ -89,7 +89,7 @@ void ListaDoble<T>::borrar_cola() {
 template<typename T>
 void ListaDoble<T>::borrar_cabeza() {
     if (cabeza == NULL) {
-        std::cout << "¡La lista esta vacía!" << std::endl;
+        std::cout << "La lista esta vacia!" << std::endl;
         return;
     }
     cabeza = cabeza->siguiente;
