@@ -1,8 +1,1 @@
-﻿  App.cpp
-C:\Users\JOSUE\Desktop\Trabajo en Clase - Listas\Nodo.cpp(5,13): error C2995: 'T Nodo<T>::getValor(void)': ya se ha definido la plantilla de función
-C:\Users\JOSUE\Desktop\Trabajo en Clase - Listas\Nodo.h(10): message : vea la declaración de 'Nodo<T>::getValor'
-C:\Users\JOSUE\Desktop\Trabajo en Clase - Listas\Nodo.cpp(10,15): error C2995: 'void Nodo<T>::setValor(T)': ya se ha definido la plantilla de función
-C:\Users\JOSUE\Desktop\Trabajo en Clase - Listas\Nodo.h(11): message : vea la declaración de 'Nodo<T>::setValor'
-  Lista.cpp
-  Nodo.cpp
-  Generando código...
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(436,5): error MSB8020: No se pueden encontrar las herramientas de compilación para Visual Studio 2019 (Conjunto de herramientas de la plataforma = 'v142'). Para compilar con las herramientas de compilación v142, instale las herramientas de compilación Visual Studio 2019. También puede actualizar a las herramientas actuales de Visual Studio. Para ello, seleccione el menú Proyecto o haga clic con el botón secundario en la solución y, a continuación, seleccione "Actualizar solución".
