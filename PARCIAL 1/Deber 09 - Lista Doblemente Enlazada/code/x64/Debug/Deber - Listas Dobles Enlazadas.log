@@ -1,0 +1,7 @@
+﻿  App.cpp
+  ListaDoble.cpp
+  Nodo.cpp
+  Validacion.cpp
+  Generando código...
+F:\NUEVO SEMESTRE\ESTRUCTURA DE DATOS-7167\copia Estructuras de Datos\estructuradedatos2021-2022\PARCIAL 1\Deber 09 - Lista Doblemente Enlazada\code\Validacion.cpp(28): warning C4172: devolución de dirección de la variable local o temporal: dato
+  Deber - Listas Dobles Enlazadas.vcxproj -> F:\NUEVO SEMESTRE\ESTRUCTURA DE DATOS-7167\copia Estructuras de Datos\estructuradedatos2021-2022\PARCIAL 1\Deber 09 - Lista Doblemente Enlazada\code\x64\Debug\Deber - Listas Dobles Enlazadas.exe
