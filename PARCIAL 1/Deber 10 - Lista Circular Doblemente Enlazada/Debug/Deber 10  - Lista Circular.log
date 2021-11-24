@@ -1,0 +1,7 @@
+﻿  App.cpp
+  ListaCircular.cpp
+  Nodo.cpp
+  Validacion.cpp
+  Generando código...
+C:\Users\JOSUE\Desktop\Deber 10  - Lista Circular\Validacion.cpp(16): warning C4172: devolución de dirección de la variable local o temporal: dato
+  Deber 10  - Lista Circular.vcxproj -> C:\Users\JOSUE\Desktop\Deber 10  - Lista Circular\Debug\Deber 10  - Lista Circular.exe
