@@ -1,28 +1,26 @@
 /* Universidad de las Fuerzas Armadas - ESPE
    Software
-	Listas Simples
+   Trabajo en Clase 07 - Lista Simple
    Autores:
    -Jhoel David Chicaiza Collantes
    -Ednan Josue Merino Calderon
    -Daniel Alberto Vizcarra Gaibor
-   -Pablo David Y�nez Alvear
-   Fecha de creaci�n: 21/11/2021
-   Fecha de modificaci�n: 21/11/2021
+   -Pablo David Yánez Alvear
+   Fecha de creación: 20/11/2021
+   Fecha de modificación: 21/11/2021
 */
 
-
 #pragma once
+#include <iostream>
 
-template <typename T>
+template<typename T>
 class Nodo {
 private:
-	T data;
-	Nodo<T>* vinculo;
+    T dato;
+    Nodo<T>* siguiente;
+    Nodo<T>* anterior;
+    template<typename U>
+    friend class Lista;
 public:
-	Nodo() = default;
-	T getValor();
-	void setValor(T);
-
-	template <typename T>
-	friend class Lista;
+    Nodo();
 };

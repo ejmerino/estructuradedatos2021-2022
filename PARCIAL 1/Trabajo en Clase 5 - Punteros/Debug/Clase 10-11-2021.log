@@ -1,5 +1,0 @@
-﻿  main.cpp
-C:\Users\JOSUE\Desktop\Clase 10-11-2021\main.cpp(8,9): warning C4101: 'b': variable local sin referencia
-C:\Users\JOSUE\Desktop\Clase 10-11-2021\main.cpp(8,30): warning C4101: 'f': variable local sin referencia
-C:\Users\JOSUE\Desktop\Clase 10-11-2021\main.cpp(8,12): warning C4101: 'c': variable local sin referencia
-  Clase 10-11-2021.vcxproj -> C:\Users\JOSUE\Desktop\Clase 10-11-2021\Debug\Clase 10-11-2021.exe
