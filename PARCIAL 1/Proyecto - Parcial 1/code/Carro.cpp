@@ -16,42 +16,48 @@
 
 using namespace std;
 
-Carro::Carro() {}
+Carro::Carro(const Carro& c) 
+{
+	*this = c;
+}
 Carro::~Carro() {}
 
-string Carro::getMarca(void)
+char* Carro::get_marca()
 {
 	return marca;
 }
 
-void Carro::setMarca(string newMarca)
+void Carro::set_marca(char _set_marca[])
 {
-	marca = newMarca;
+	marca = new char[strlen(_set_marca) + 1];
+	strcpy(marca, _set_marca);
 }
 
-string Carro::getPlaca(void)
+char* Carro::get_placa()
 {
 	return placa;
 }
 
-void Carro::setPlaca(string newPlaca)
+void Carro::set_placa(char _set_placa[])
 {
-	placa = newPlaca;
+	placa = new char[strlen(_set_placa) + 1];
+	strcpy(placa, _set_placa);
 }
 
-int Carro::getAno(void)
+char* Carro::get_ano()
 {
 	return ano;
 }
 
-void Carro::setAno(int newAno)
+void Carro::set_ano(char _set_ano[])
 {
-	ano = newAno;
+	ano = new char[strlen(_set_ano) + 1];
+	strcpy(ano, _set_ano);
 }
 
 void Carro::to_string(void)
 {
-	cout << "\nEl carro es de la marca" << getMarca() << "tiene la placa : " << getPlaca() << " y es del año: " << getAno();
+	cout << "\nEl carro es de la marca" << get_marca() << "tiene la placa : " << get_placa() << " y es del año: " << get_ano();
 }
 
 void Carro::generar_dueno(void)

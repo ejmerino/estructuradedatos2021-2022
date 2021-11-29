@@ -16,19 +16,20 @@
 
 class Carro{
 public:
-	Carro();
+	Carro()=default;
+	Carro(const Carro&);
 	~Carro();
-	std::string getMarca(void);
-	void setMarca(std::string newMarca);
-	std::string getPlaca(void);
-	void setPlaca(std::string newPlaca);
-	int getAno(void);
-	void setAno(int newAno);
+	char* get_marca();
+	void set_marca(char[]);
+	char* get_placa();
+	void set_placa(char[]);
+	char* get_ano();
+	void set_ano(char[]);
 	void to_string(void);
 	void generar_dueno(void);
 	void registro(void);
 private:
-	std::string marca;
-	std::string placa;
-	int ano;
+	char* marca;
+	char* placa;
+	char* ano;
 };

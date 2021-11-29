@@ -11,38 +11,97 @@
 */
 
 #pragma once
-#pragma warning(disable : 4996)
-#include <iostream>
-#include <string.h>
-#include <stdlib.h>
-using namespace std;
-class Persona{
+#include <iostream> 
+
+class Persona
+{
+
 public:
+
+    /**
+     * @brief Construct a new Persona object
+     *
+     */
+    Persona() = default;
+
+    /**
+     * @brief Construct a new Persona object
+     *
+     */
+    Persona(std::string, std::string, std::string, std::string, std::string, std::string);
+
+    /**
+     * @brief Set the name object
+     *
+     */
+    void set_name(std::string);
+
+    /**
+     * @brief Set the last name object
+     *
+     */
+    void set_last_name(std::string);
+
+    /**
+     * @brief Set the number object
+     *
+     */
+    void set_number(std::string);
+
+    /**
+     * @brief Set the email object
+     *
+     */
+    void set_email(std::string);
+
+    /**
+     * @brief Set the id object
+     *
+     */
+    void set_id(std::string);
+
+    /**
+     * @brief Get the name object
+     *
+     * @return std::string
+     */
+    std::string get_name();
+
+    /**
+     * @brief Get the last name object
+     *
+     * @return std::string
+     */
+    std::string get_last_name();
+
+    /**
+     * @brief Get the number object
+     *
+     * @return std::string
+     */
+    std::string get_number();
+
+    /**
+     * @brief Get the email object
+     *
+     * @return std::string
+     */
+    std::string get_email();
+
+    /**
+     * @brief Get the id object
+     *
+     * @return std::string
+     */
+    std::string get_id();
+
 private:
-	char* id;
-	char* first_name;
-	char* surname;
-	char* last_name;	
-	char* email;
-	float value = 0.0f;
-	
-public:
-	Persona() = default;
-	Persona(const Persona&);
-	void set_id(char[]);
-	char* get_id();
-	void set_first_name(char[]);
-	char* get_first_name();
-	void set_surname(char[]);
-	char* get_surname();
-	void set_last_name(char[]);
-	char* get_last_name();
-	void set_email(char[]);
-	char* get_email();
-	void set_value(float);
-	float get_value();
-	friend std::ostream& operator << (std::ostream & os, Persona & p);
-	friend std::istream& operator >> (std::istream & is, Persona & p);
-	bool operator== (Persona & p);
-	~Persona();
+    std::string id_;
+    std::string name_;
+    std::string last_name_;
+    std::string date_of_birth_;
+    std::string email_;
+    std::string addres_;
+    std::string number_phone_;
+    int age_ = 0;
 };

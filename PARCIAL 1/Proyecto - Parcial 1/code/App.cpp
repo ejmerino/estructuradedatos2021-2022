@@ -17,7 +17,7 @@
 #include "Persona.cpp"
 #include <iostream>
 #include "Persona.h"
-#include "Validacion.h"
+#include "Validation.h"
 #include <cstdlib>
 
 

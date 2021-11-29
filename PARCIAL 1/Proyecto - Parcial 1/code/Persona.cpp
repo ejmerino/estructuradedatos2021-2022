@@ -12,96 +12,89 @@
 
 #include "Persona.h"
 
-Persona::Persona(const Persona& p) {
-	*this = p;
+Persona::Persona(std::string id, std::string name,
+	std::string last_name, std::string date_of_birth, std::string number, std::string addres)
+	: id_(id), name_(name), last_name_(last_name), date_of_birth_(date_of_birth), number_phone_(number), addres_(addres)
+{
+
 }
 
-Persona::~Persona() {}
-
-void Persona::set_id(char _set_id[]) {
-	id = new char[strlen(_set_id) + 1];
-	strcpy(id, _set_id);
+void Persona::set_name(std::string name)
+{
+	this->name_ = name;
 }
 
-char* Persona::get_id() {
-	return id;
+void Persona::set_last_name(std::string last_name)
+{
+	this->last_name_ = last_name;
 }
 
-void Persona::set_first_name(char _first_name[]) {
-	first_name = new char[strlen(_first_name) + 1];
-	strcpy(first_name, _first_name);
+void Persona::set_addres(std::string adress)
+{
+	this->addres_ = adress;
 }
 
-char* Persona::get_first_name() {
-	return first_name;
+void Persona::set_number(std::string phone)
+{
+	this->number_phone_ = phone;
 }
 
-void Persona::set_surname(char _surname[]) {
-	surname = new char[strlen(_surname) + 1];
-	strcpy(surname, _surname);
+void Persona::set_email(std::string email)
+{
+	this->email_ = email;
 }
 
-char* Persona::get_surname() {
-	return surname;
+void Persona::set_id(std::string id)
+{
+	this->id_ = id;
 }
 
-void Persona::set_last_name(char _last_name[]) {
-	last_name = new char[strlen(_last_name) + 1];
-	strcpy(last_name, _last_name);
+void Persona::set_age(int age)
+{
+	this->age_ = age;
 }
 
-char* Persona::get_last_name() {
-	return last_name;
+void Persona::set_date_of_birth(std::string date_of_birth)
+{
+	this->date_of_birth_ = date_of_birth;
 }
 
-void Persona::set_email(char _email[]) {
-	email = new char[strlen(_email) + 1];
-	strcpy(email, _email);
+std::string Persona::get_name()
+{
+	return name_;
 }
 
-char* Persona::get_email() {
-	return email;
+std::string Persona::get_last_name()
+{
+	return last_name_;
 }
 
-std::ostream& operator <<(std::ostream& os, Persona& p) {
-	os << p.get_id() << std::endl;
-	os << p.get_first_name() << std::endl;
-	os << p.get_surname() << std::endl;
-	os << p.get_last_name() << std::endl;	
-	return os;
+std::string Persona::get_addres()
+{
+	return addres_;
 }
 
-std::istream& operator >>(std::istream& is, Persona& p) {
-	char aux_id[11], aux_first_name[40], aux_surname[40], aux_last_name[40], aux_email[40];
-
-	is >> aux_id;
-	p.set_id(aux_id);
-
-	is >> aux_first_name;
-	p.set_first_name(aux_first_name);
-
-	is >> aux_surname;
-	p.set_surname(aux_surname);
-
-	is >> aux_last_name;
-	p.set_last_name(aux_last_name);
-
-	is >> aux_email;
-	p.set_email(aux_email);
-
-	is.ignore();
-	return is;
+std::string Persona::get_number()
+{
+	return number_phone_;
 }
 
-bool Persona::operator==(Persona& p) {
-	if (strcmp(this->id, p.id) == 0) {
-		return true;
-	}
-	if (strcmp(this->first_name, p.first_name) == 0 &&
-		strcmp(this->surname, p.surname) == 0 &&
-		strcmp(this->last_name, p.last_name) == 0) {
-		return true;
-	}
-	return false;
+std::string Persona::get_email()
+{
+	return email_;
 }
 
+std::string Persona::get_id()
+{
+	return id_;
+}
+
+std::string Persona::get_date_of_birth()
+{
+	return date_of_birth_;
+}
+
+int Persona::get_age()
+{
+	return age_;
+}

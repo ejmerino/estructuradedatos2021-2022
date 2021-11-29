@@ -1,28 +1,16 @@
-﻿  Persona.cpp
-Carro.obj : error LNK2005: ya se definió "public: __cdecl Carro::Carro(void)" (??0Carro@@QEAA@XZ) en App.obj
-Carro.obj : error LNK2005: ya se definió "public: __cdecl Carro::~Carro(void)" (??1Carro@@QEAA@XZ) en App.obj
-Carro.obj : error LNK2005: ya se definió "public: void __cdecl Carro::generar_dueno(void)" (?generar_dueno@Carro@@QEAAXXZ) en App.obj
-Carro.obj : error LNK2005: ya se definió "public: int __cdecl Carro::getAno(void)" (?getAno@Carro@@QEAAHXZ) en App.obj
-Carro.obj : error LNK2005: ya se definió "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl Carro::getMarca(void)" (?getMarca@Carro@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) en App.obj
-Carro.obj : error LNK2005: ya se definió "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl Carro::getPlaca(void)" (?getPlaca@Carro@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) en App.obj
-Carro.obj : error LNK2005: ya se definió "public: void __cdecl Carro::registro(void)" (?registro@Carro@@QEAAXXZ) en App.obj
-Carro.obj : error LNK2005: ya se definió "public: void __cdecl Carro::setAno(int)" (?setAno@Carro@@QEAAXH@Z) en App.obj
-Carro.obj : error LNK2005: ya se definió "public: void __cdecl Carro::setMarca(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?setMarca@Carro@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) en App.obj
-Carro.obj : error LNK2005: ya se definió "public: void __cdecl Carro::setPlaca(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?setPlaca@Carro@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) en App.obj
-Carro.obj : error LNK2005: ya se definió "public: void __cdecl Carro::to_string(void)" (?to_string@Carro@@QEAAXXZ) en App.obj
-Persona.obj : error LNK2005: ya se definió "public: __cdecl Persona::Persona(class Persona const &)" (??0Persona@@QEAA@AEBV0@@Z) en App.obj
-Persona.obj : error LNK2005: ya se definió "public: __cdecl Persona::~Persona(void)" (??1Persona@@QEAA@XZ) en App.obj
-Persona.obj : error LNK2005: ya se definió "class std::basic_istream<char,struct std::char_traits<char> > & __cdecl operator>>(class std::basic_istream<char,struct std::char_traits<char> > &,class Persona &)" (??5@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV01@AEAVPersona@@@Z) en App.obj
-Persona.obj : error LNK2005: ya se definió "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class Persona &)" (??6@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV01@AEAVPersona@@@Z) en App.obj
-Persona.obj : error LNK2005: ya se definió "public: bool __cdecl Persona::operator==(class Persona &)" (??8Persona@@QEAA_NAEAV0@@Z) en App.obj
-Persona.obj : error LNK2005: ya se definió "public: char * __cdecl Persona::get_email(void)" (?get_email@Persona@@QEAAPEADXZ) en App.obj
-Persona.obj : error LNK2005: ya se definió "public: char * __cdecl Persona::get_first_name(void)" (?get_first_name@Persona@@QEAAPEADXZ) en App.obj
-Persona.obj : error LNK2005: ya se definió "public: char * __cdecl Persona::get_id(void)" (?get_id@Persona@@QEAAPEADXZ) en App.obj
-Persona.obj : error LNK2005: ya se definió "public: char * __cdecl Persona::get_last_name(void)" (?get_last_name@Persona@@QEAAPEADXZ) en App.obj
-Persona.obj : error LNK2005: ya se definió "public: char * __cdecl Persona::get_surname(void)" (?get_surname@Persona@@QEAAPEADXZ) en App.obj
-Persona.obj : error LNK2005: ya se definió "public: void __cdecl Persona::set_email(char * const)" (?set_email@Persona@@QEAAXQEAD@Z) en App.obj
-Persona.obj : error LNK2005: ya se definió "public: void __cdecl Persona::set_first_name(char * const)" (?set_first_name@Persona@@QEAAXQEAD@Z) en App.obj
-Persona.obj : error LNK2005: ya se definió "public: void __cdecl Persona::set_id(char * const)" (?set_id@Persona@@QEAAXQEAD@Z) en App.obj
-Persona.obj : error LNK2005: ya se definió "public: void __cdecl Persona::set_last_name(char * const)" (?set_last_name@Persona@@QEAAXQEAD@Z) en App.obj
-Persona.obj : error LNK2005: ya se definió "public: void __cdecl Persona::set_surname(char * const)" (?set_surname@Persona@@QEAAXQEAD@Z) en App.obj
-C:\Users\JOSUE\Desktop\Estructura de Datos 2021-2022\estructuradedatos2021-2022\PARCIAL 1\Proyecto - Parcial 1\code\x64\Debug\code.exe : fatal error LNK1169: se encontraron uno o más símbolos definidos simultáneamente
+﻿  App.cpp
+C:\Users\JOSUE\Desktop\Proyecto - Parcial 1\code\App.cpp(29,6): warning C4101: 'id': variable local sin referencia
+C:\Users\JOSUE\Desktop\Proyecto - Parcial 1\code\App.cpp(28,7): warning C4101: 'ced': variable local sin referencia
+C:\Users\JOSUE\Desktop\Proyecto - Parcial 1\code\App.cpp(34,7): warning C4101: 'aux_email': variable local sin referencia
+C:\Users\JOSUE\Desktop\Proyecto - Parcial 1\code\App.cpp(33,7): warning C4101: 'aux_value': variable local sin referencia
+  Carro.cpp
+C:\Users\JOSUE\Desktop\Proyecto - Parcial 1\code\Carro.cpp(33,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\JOSUE\Desktop\Proyecto - Parcial 1\code\Carro.cpp(44,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\JOSUE\Desktop\Proyecto - Parcial 1\code\Carro.cpp(55,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Persona.cpp
+  Validacion.cpp
+C:\Users\JOSUE\Desktop\Proyecto - Parcial 1\code\Validacion.cpp(66,21): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+  Generando código...
+C:\Users\JOSUE\Desktop\Proyecto - Parcial 1\code\Validacion.cpp(33): warning C4172: devolución de dirección de la variable local o temporal: dato
+C:\Users\JOSUE\Desktop\Proyecto - Parcial 1\code\Validacion.cpp(18): warning C4172: devolución de dirección de la variable local o temporal: dato
+C:\Users\JOSUE\Desktop\Proyecto - Parcial 1\code\Validacion.cpp(50): warning C4172: devolución de dirección de la variable local o temporal: dato

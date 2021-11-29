@@ -1,0 +1,13 @@
+Fecha presentación del modelo: Viernes 19 de noviembre
+Fecha proyecto final: Viernes 3 de diciembre
+Exámen Conjunto: Miércoles 1 de diciembre
+Registro de automóviles con listas doblemente enlazadas circulares.
+En clase persona:
+-ID (Cédula Validada)
+-Correo (dos iniciales nombre apellido @espe.edu.ec)
+La placa del auto debe decir a qué persona le corresponde
+
+Listas doblemente enlazadas circulares.
+Registro de automóviles (A qué persona le pertenece este automóvil)
+Crear modelo (Persona con sus diferentes campos)
+La placa del auto debe decir a qué persona le corresponde.
