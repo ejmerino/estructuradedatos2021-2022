@@ -142,13 +142,18 @@
   <ItemGroup>
     <ClCompile Include="App.cpp" />
     <ClCompile Include="Carro.cpp" />
+    <ClCompile Include="Creator.cpp" />
+    <ClCompile Include="File.cpp" />
     <ClCompile Include="Generador.cpp" />
     <ClCompile Include="Persona.cpp" />
     <ClCompile Include="Validation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Carro.h" />
+    <ClInclude Include="Creator.h" />
+    <ClInclude Include="File.h" />
     <ClInclude Include="Generator.h" />
+    <ClInclude Include="json.hpp" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Persona.h" />

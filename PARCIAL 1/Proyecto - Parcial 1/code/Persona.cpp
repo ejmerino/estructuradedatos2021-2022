@@ -13,8 +13,8 @@
 #include "Persona.h"
 
 Persona::Persona(std::string id, std::string name,
-	std::string last_name, std::string date_of_birth, std::string number, std::string addres)
-	: id_(id), name_(name), last_name_(last_name), date_of_birth_(date_of_birth), number_phone_(number), addres_(addres)
+	std::string last_name, std::string number)
+	: id_(id), name_(name), last_name_(last_name), number_phone_(number)
 {
 
 }
@@ -27,11 +27,6 @@ void Persona::set_name(std::string name)
 void Persona::set_last_name(std::string last_name)
 {
 	this->last_name_ = last_name;
-}
-
-void Persona::set_addres(std::string adress)
-{
-	this->addres_ = adress;
 }
 
 void Persona::set_number(std::string phone)
@@ -49,16 +44,6 @@ void Persona::set_id(std::string id)
 	this->id_ = id;
 }
 
-void Persona::set_age(int age)
-{
-	this->age_ = age;
-}
-
-void Persona::set_date_of_birth(std::string date_of_birth)
-{
-	this->date_of_birth_ = date_of_birth;
-}
-
 std::string Persona::get_name()
 {
 	return name_;
@@ -67,11 +52,6 @@ std::string Persona::get_name()
 std::string Persona::get_last_name()
 {
 	return last_name_;
-}
-
-std::string Persona::get_addres()
-{
-	return addres_;
 }
 
 std::string Persona::get_number()
@@ -87,14 +67,4 @@ std::string Persona::get_email()
 std::string Persona::get_id()
 {
 	return id_;
-}
-
-std::string Persona::get_date_of_birth()
-{
-	return date_of_birth_;
-}
-
-int Persona::get_age()
-{
-	return age_;
 }

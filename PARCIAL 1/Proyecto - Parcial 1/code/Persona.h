@@ -28,7 +28,7 @@ public:
      * @brief Construct a new Persona object
      *
      */
-    Persona(std::string, std::string, std::string, std::string, std::string, std::string);
+    Persona(std::string, std::string, std::string, std::string);
 
     /**
      * @brief Set the name object
