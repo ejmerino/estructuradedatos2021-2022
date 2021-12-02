@@ -1,0 +1,3 @@
+﻿  Application.cpp
+C:\Users\JOSUE\Desktop\Proyecto - Parcial 1\Application.cpp(89): warning C4172: devolución de dirección de la variable local o temporal: persons
+  Proyecto - Registro de Vehículos.vcxproj -> C:\Users\JOSUE\Desktop\Proyecto - Parcial 1\Debug\Proyecto - Registro de Vehículos.exe
