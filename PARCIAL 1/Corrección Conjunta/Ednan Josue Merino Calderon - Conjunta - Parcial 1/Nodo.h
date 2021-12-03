@@ -1,22 +1,20 @@
 #pragma once
-#include <cstring>
 
-using namespace std;
-
+template <class T>
 class Nodo {
-private:
-	float dato;
-	Nodo* anterior;
-	Nodo* siguiente;
-public:
-	Nodo(void);
-	Nodo(float, Nodo*, Nodo*);
-	void setDato(float);
-	float getDato(void);
-	Nodo* getSiguiente(void);
-	void setSiguiente(Nodo*);
-	Nodo* getAnterior(void);
-	void setAnterior(Nodo*);
-	friend class ListaDobleCircular;
+
+	private:
+		T dato;
+		Nodo<T>* siguiente;
+		Nodo<T>* anterior;
+	public:
+
+		Nodo() = default;
+		Nodo(T);
+
+		template <class T>
+		friend class Lista;
+
+		friend class ListaCalculo;
 
 };

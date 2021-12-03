@@ -1,0 +1,3 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: El directorio intermedio (x64\Debug\) contiene archivos compartidos de otro proyecto (Conjunta.vcxproj). Esto puede dar lugar a un comportamiento incorrecto de limpieza y recompilación.
+  Calculo.cpp
+  Conjunta.vcxproj -> C:\Users\JOSUE\Desktop\Ednan Josue Merino Calderon - Conjunta - Parcial 1\x64\Debug\JosueMerino - Parcial1 - Conjunta.exe

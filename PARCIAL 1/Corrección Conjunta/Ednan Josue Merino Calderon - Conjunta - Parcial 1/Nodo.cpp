@@ -1,42 +1,15 @@
+/**
+    Universidad de las Fuerzas Armadas - ESPE
+    Corrección Prueba Conjunta
+    Autor: Josué Merino Calderón
+    Fecha de creación: 02/12/2021
+    Fecha de modificación: 03/12/2021
+**/
 
-
-#include <iostream>
-#include <cstring>
 #include "Nodo.h"
+#include "Calculo.h"
 
-using namespace std;
-void Nodo::setDato(float newDato) {
-    dato = newDato;
-}
-
-float Nodo::getDato(void) {
-    return dato;
-}
-
-Nodo* Nodo::getAnterior(void) {
-    return anterior;
-}
-
-void Nodo::setAnterior(Nodo* newAnterior) {
-    anterior = newAnterior;
-}
-
-Nodo* Nodo::getSiguiente(void) {
-    return siguiente;
-}
-
-void Nodo::setSiguiente(Nodo* newSiguiente) {
-    siguiente = newSiguiente;
-}
-
-Nodo::Nodo() {
-    dato = 0;
-    siguiente = NULL;
-    anterior = NULL;
-}
-
-Nodo::Nodo(float newDato, Nodo* newSiguiente, Nodo* newAnterior) {
-    dato = newDato;
-    siguiente = newSiguiente;
-    anterior = newAnterior;
+template <class T>
+Nodo<T>::Nodo(T nuevoDato) {
+	this->dato = nuevoDato;
 }
