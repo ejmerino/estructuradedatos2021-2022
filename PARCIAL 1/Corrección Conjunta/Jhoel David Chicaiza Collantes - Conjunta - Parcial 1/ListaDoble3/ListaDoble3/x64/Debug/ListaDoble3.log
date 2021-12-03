@@ -1,0 +1,8 @@
+﻿  lista_doble_enlazada.cpp
+  main.cpp
+  menu.cpp
+D:\NUEVO SEMESTRE\ESTRUCTURA DE DATOS-7167\A2.Lista\Jhoel David Chicaiza Collantes - Conjunta - Parcial 1\menu.cpp(94,46): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+  menu_option.cpp
+  nodo.cpp
+  Generando código...
+  ListaDoble3.vcxproj -> D:\NUEVO SEMESTRE\ESTRUCTURA DE DATOS-7167\A2.Lista\Jhoel David Chicaiza Collantes - Conjunta - Parcial 1\ListaDoble3\x64\Debug\ListaDoble3.exe
