@@ -5,7 +5,7 @@ Autores:
 Jhoel Chichaiza
 Josué Merino
 Pablo Yanez
-Daniel Vizarra
+Daniel Vizcarra
 Fecha de creación: 26/11/2021
 Fecha de modificación: 07/12/2021
 **/
@@ -87,7 +87,7 @@ void Application::create_account()
 
     while (validate_placa)
     {
-        std::cout << "Ingrese la placa: ";
+        std::cout << "Ingrese la placa (AAA1234 | AAA123): ";
         std::getline(std::cin, placa);
         validate_placa = (File::search(placa) || Utils::Validation::validate_placa(placa));
         std::cin.clear();

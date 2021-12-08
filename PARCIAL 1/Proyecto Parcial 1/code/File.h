@@ -5,7 +5,7 @@ Autores:
 Jhoel Chichaiza
 Josué Merino
 Pablo Yanez
-Daniel Vizarra
+Daniel Vizcarra
 Fecha de creación: 26/11/2021
 Fecha de modificación: 07/12/2021
 **/
@@ -52,17 +52,10 @@ public:
 	static bool search(std::string&);
 
 	/**
-	 * @brief Construct a new Linked List< Person>read object
+	 * @brief Construct a new Linked List<Person>read object
 	 *
 	 */
 	static LinkedList<Person>read();
-
-	/**
-	 * @brief buscar deuda por persona
-	 *
-	 * @return Person
-	 */
-	static Person at_person(std::string);
 
 	/**
 	 * @brief convertir a json

@@ -5,7 +5,7 @@ Autores:
 Jhoel Chichaiza
 Josué Merino
 Pablo Yanez
-Daniel Vizarra
+Daniel Vizcarra
 Fecha de creación: 26/11/2021
 Fecha de modificación: 07/12/2021
 **/
@@ -61,19 +61,6 @@ bool File::search(std::string& id)
 	return false;
 }
 
-
-Person File::at_person(std::string key)
-{
-	std::ifstream file("persons.json");
-	json file_json;
-	Person person;
-	file >> file_json;
-	if (key == file_json[key]["id"].get<std::string>())
-	{
-		to_object_json(file_json, person, key);
-	}
-	return person;
-}
 
 LinkedList<Person> File::read()
 {

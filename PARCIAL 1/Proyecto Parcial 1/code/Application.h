@@ -5,7 +5,7 @@ Autores:
 Jhoel Chichaiza
 Josué Merino
 Pablo Yanez
-Daniel Vizarra
+Daniel Vizcarra
 Fecha de creación: 26/11/2021
 Fecha de modificación: 07/12/2021
 **/
@@ -44,7 +44,7 @@ private:
 public:
 
 	/**
-	 * @brief tabla amortizacion
+	 * @brief corre el programa
 	 *
 	 * @return int
 	 */
