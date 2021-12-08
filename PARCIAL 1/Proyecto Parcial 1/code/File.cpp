@@ -1,3 +1,14 @@
+/**
+Universidad de las Fuerzas Armadas - ESPE
+PROYECTO PRIMER PARCIAL - COMPRA DE AUTOMOVILES
+Autores:
+Jhoel Chichaiza
+Josué Merino
+Pablo Yanez
+Daniel Vizarra
+Fecha de creación: 26/11/2021
+Fecha de modificación: 07/12/2021
+**/
 #include "File.h"
 #include <iomanip>
 void File::delete_account()
@@ -106,26 +117,26 @@ void File::to_json_objet(json& j, Person value)
 {
 	std::string key = value.get_id();
 	j[key]["id"] = value.get_id();
-	j[key]["name"] = value.get_name();
-	j[key]["last_name"] = value.get_last_name();
-	j[key]["date_of_birth"] = value.get_date_of_birth();
-	j[key]["age"] = value.get_age();
-	j[key]["email"] = value.get_email();
-	j[key]["phone"] = value.get_number();
-	j[key]["addres"] = value.get_addres();
+	j[key]["nombre"] = value.get_name();
+	j[key]["apellido"] = value.get_last_name();
+	j[key]["fecha_de_nacimiento"] = value.get_date_of_birth();
+	j[key]["edad"] = value.get_age();
+	j[key]["correo"] = value.get_email();
+	j[key]["celular"] = value.get_number();
+	j[key]["direccion"] = value.get_addres();
 	j[key]["placa"] = value.get_placa();
 }
 
 void File::to_object_json(json& j, Person& value, std::string key)
 {
 	value.set_id(j[key]["id"].get<std::string>());
-	value.set_name(j[key]["name"].get<std::string>());
-	value.set_last_name(j[key]["last_name"].get<std::string>());
-	value.set_date_of_birth(j[key]["date_of_birth"].get<std::string>());
-	value.set_email(j[key]["email"].get<std::string>());
-	value.set_number(j[key]["phone"].get<std::string>());
-	value.set_addres(j[key]["addres"].get<std::string>());
-	value.set_age(j[key]["age"].get<int>());
+	value.set_name(j[key]["nombre"].get<std::string>());
+	value.set_last_name(j[key]["apellido"].get<std::string>());
+	value.set_date_of_birth(j[key]["fecha_de_nacimiento"].get<std::string>());
+	value.set_email(j[key]["correo"].get<std::string>());
+	value.set_number(j[key]["celular"].get<std::string>());
+	value.set_addres(j[key]["direccion"].get<std::string>());
+	value.set_age(j[key]["edad"].get<int>());
 	value.set_placa(j[key]["placa"].get<std::string>());
 }
 
