@@ -17,11 +17,11 @@ void File::delete_account()
 
 void File::add(LinkedList<Person>& list)
 {
-	std::ofstream keys("keys.txt");
+	std::ofstream keys("placas.txt");
 	int j = 0;
 	while (j < list.get_size())
 	{
-		keys << list.at(j)->get_data().get_id() << "," << "\n";
+		keys << list.at(j)->get_data().get_placa() << "," << "\n";
 		++j;
 	}
 	keys.close();
@@ -61,12 +61,33 @@ bool File::search(std::string& id)
 	return false;
 }
 
+bool File::search_placa(std::string& placa)
+{
+	std::ifstream file("persons.json");
+	json file_json;
+	try
+	{
+		file >> file_json;
+		if (placa == file_json[placa]["placa"].get<std::string>())
+		{
+			std::cout << "\nPlaca Existente, el automovil ya fue vendido." << std::endl;
+			std::cin.clear();
+			return true;
+		}
+	}
+	catch (json::exception& e)
+	{
+		return false;
+	}
+
+	return false;
+}
 
 LinkedList<Person> File::read()
 {
 	std::vector<std::string> keys_vector;
 	LinkedList<Person> list;
-	std::ifstream keys("keys.txt");
+	std::ifstream keys("placas.txt");
 	std::string str;
 	std::string str2;
 	int count_key{ 0 };
@@ -102,7 +123,7 @@ LinkedList<Person> File::read()
 
 void File::to_json_objet(json& j, Person value)
 {
-	std::string key = value.get_id();
+	std::string key = value.get_placa();
 	j[key]["id"] = value.get_id();
 	j[key]["nombre"] = value.get_name();
 	j[key]["apellido"] = value.get_last_name();

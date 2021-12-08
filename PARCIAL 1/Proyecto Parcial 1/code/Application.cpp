@@ -89,7 +89,7 @@ void Application::create_account()
     {
         std::cout << "Ingrese la placa (AAA1234 | AAA123): ";
         std::getline(std::cin, placa);
-        validate_placa = (File::search(placa) || Utils::Validation::validate_placa(placa));
+        validate_placa = (File::search_placa(placa) || Utils::Validation::validate_placa(placa));
         std::cin.clear();
         std::cin.ignore(INT_MAX, '\n');
     }

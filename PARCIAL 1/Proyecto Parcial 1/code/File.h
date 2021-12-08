@@ -44,12 +44,21 @@ public:
 	static void update();
 
 	/**
-	 * @brief buscar en lsita
+	 * @brief buscar en lista
 	 *
 	 * @return true
 	 * @return false
 	 */
 	static bool search(std::string&);
+
+	/**
+	 * @brief buscar en lista
+	 *
+	 * @return true
+	 * @return false
+	 */
+	static bool search_placa(std::string&);
+
 
 	/**
 	 * @brief Construct a new Linked List<Person>read object
