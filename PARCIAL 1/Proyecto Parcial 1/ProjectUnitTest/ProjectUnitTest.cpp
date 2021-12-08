@@ -2,6 +2,10 @@
 #include "CppUnitTest.h"
 #include "../code/Utils.h"
 #include "../code/Utils.cpp"
+#include "../code/Person.cpp"
+#include "../code/Person.h"
+#include "../code/Node.h"
+#include "../code/LinkedList.h"
 
 
 
@@ -14,21 +18,20 @@ namespace ProjectUnitTest
 	{
 	public:
 
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(Validate_Id1)
 		{
 			std::string id = "1724701402";
 			Assert::AreEqual(false, Utils::Validation::validate_id(id));
 		}
-
-		TEST_METHOD(TestMethod2)
+		TEST_METHOD(Validate_Id2)
 		{
-			std::string id = "1724701402";
-			Assert::IsTrue(Validation::validate_id(id));
+			std::string id = "1719132027";
+			Assert::AreEqual(false, Utils::Validation::validate_id(id));
 		}
 
-		TEST_METHOD(TestMethod3)
+		TEST_METHOD(Validate_Id3)
 		{
-			std::string id = "175074836";
+			std::string id = "1721482998";
 			Assert::AreEqual(false, Utils::Validation::validate_id(id));
 		}
 	};
@@ -63,7 +66,7 @@ namespace ProjectUnitTest
 		TEST_METHOD(validate_date1)
 		{
 			std::string id = "14/04/2002";
-			Assert::AreEqual(false, Utils::Validation::validate_date(id));
+			Assert::AreEqual(true, Utils::Validation::validate_date(id));
 		}
 		TEST_METHOD(validate_date2)
 		{
@@ -73,7 +76,29 @@ namespace ProjectUnitTest
 		TEST_METHOD(validate_date3)
 		{
 			std::string id = "19/02/2004";
-			Assert::AreEqual(false, Utils::Validation::validate_date(id));
+			Assert::AreEqual(true, Utils::Validation::validate_date(id));
+		}
+	};
+
+	/*************************IS DIGIT TEST**********************/
+	TEST_CLASS(Validation4)
+	{
+	public:
+
+		TEST_METHOD(is_Digit1)
+		{
+			std::string id = "123456798";
+			Assert::AreEqual(true, Utils::Validation::is_digit(id));
+		}
+		TEST_METHOD(is_Digit2)
+		{
+			std::string id = "Hola";
+			Assert::AreEqual(false, Utils::Validation::is_digit(id));
+		}
+		TEST_METHOD(is_Digit3)
+		{
+			std::string id = "123Yulli";
+			Assert::AreEqual(true, Utils::Validation::is_digit(id));
 		}
 	};
 
@@ -84,7 +109,7 @@ namespace ProjectUnitTest
 
 		TEST_METHOD(generate_actual_day1)
 		{
-			std::string date = "24/06/2021";
+			std::string date = "08/12/2021";
 			Assert::AreEqual(date, Utils::Generator::return_current_time_and_date());
 		}
 	};
@@ -111,10 +136,13 @@ namespace ProjectUnitTest
 		}
 	};
 
+
+
 	/*****************lower case TEST*************************/
-	TEST_CLASS(Generator4)
+	TEST_CLASS(Generator3)
 	{
 	public:
+
 
 		TEST_METHOD(lower_case1)
 		{
@@ -122,16 +150,18 @@ namespace ProjectUnitTest
 			std::string lower = "josue merino";
 			Assert::AreEqual(lower, Utils::Generator::lower_case(frase));
 		}
+
 		TEST_METHOD(lower_case2)
 		{
 			std::string frase = "AdIOs";
 			std::string lower = "adios";
 			Assert::AreEqual(lower, Utils::Generator::lower_case(frase));
 		}
+
 		TEST_METHOD(lower_case3)
 		{
 			std::string frase = "DANIEL VIZCARRA";
-			std::string lower = "junior jurado";
+			std::string lower = "daniel vizcarra";
 			Assert::AreEqual(lower, Utils::Generator::lower_case(frase));
 		}
 	};
