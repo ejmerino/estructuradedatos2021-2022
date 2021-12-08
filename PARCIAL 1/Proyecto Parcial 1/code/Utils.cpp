@@ -10,7 +10,7 @@ Fecha de creación: 26/11/2021
 Fecha de modificación: 07/12/2021
 **/
 #include "Utils.h"
-#pragma warning(disable : 4996) ;
+#pragma warning(disable : 4996);
 using namespace Utils;
 
 //bool Validation::validate_placa(std::string& _placa) {}
@@ -75,6 +75,42 @@ bool Utils::Validation::is_digit(const std::string& str)
             return true;
         }
     }
+    return false;
+}
+
+bool Validation::validate_placa(std::string& _placa)
+{
+    bool temp1 = false, temp2 = false;
+
+    if (_placa.length() != 6 && _placa.length() != 7)
+    {
+        return true;
+    }
+
+    for (size_t i = 0; i < 3; i++)
+    {
+        char c = _placa[i];
+        if (!isalpha(c) && !isspace(c))
+        {
+            std::cout << "Error!, El formato es el siguiente: (ABC123 o ABC1234)." << std::endl;
+            return true;
+        }
+
+    }
+
+    for (size_t i = 3; i < 8; i++)
+    {
+        char c = _placa[i];
+        if (!isalpha(c) && !isspace(c))
+        {
+            return false;
+        }
+        else {
+            std::cout << "Error!, El formato es el siguiente: (ABC123 o ABC1234)." << std::endl;
+            return true;
+        }
+    }
+
     return false;
 }
 

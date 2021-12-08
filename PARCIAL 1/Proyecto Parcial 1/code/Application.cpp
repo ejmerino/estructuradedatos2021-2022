@@ -65,7 +65,7 @@ void Application::create_account()
     std::string date_of_birth;
     while (validate)
     {
-        std::cout << "Ingrese la fecha de nacimiento: ";
+        std::cout << "Ingrese la fecha de nacimiento (dd-mm-aaaa): ";
         std::getline(std::cin, date_of_birth);
         validate = Utils::Validation::validate_date_of_birth(date_of_birth);
     }
@@ -82,11 +82,18 @@ void Application::create_account()
     std::getline(std::cin, addres);
 
     std::string placa;
-    std::cout << "Ingrese la placa: ";
-    std::getline(std::cin, placa);
-        
 
-    LinkedList<Person> persons = Application::container();
+    bool validate_placa = true;
+
+    while (validate_placa)
+    {
+        std::cout << "Ingrese la placa: ";
+        std::getline(std::cin, placa);
+        validate_placa = (File::search(placa) || Utils::Validation::validate_placa(placa));
+        std::cin.clear();
+        std::cin.ignore(INT_MAX, '\n');
+    }
+       LinkedList<Person> persons = Application::container();
     int age = Utils::Generator::calculate_age(date_of_birth);
     std::string email = Utils::Generator::create_email(persons, name, last_name);
     Person new_person(id, name, last_name, date_of_birth, phone, addres, placa);
