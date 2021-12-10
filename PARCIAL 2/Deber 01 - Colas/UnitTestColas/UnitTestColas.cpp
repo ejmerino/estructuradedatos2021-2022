@@ -5,6 +5,8 @@
 #include "../code/Cliente.h"
 #include "../code/Cola.cpp"
 #include "../code/Cola.h"
+#include "../code/Calculo.h"
+#include "../code/Calculo.cpp"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
