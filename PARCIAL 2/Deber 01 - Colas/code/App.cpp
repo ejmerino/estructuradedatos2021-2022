@@ -19,7 +19,7 @@
 #include <wchar.h>
 #include <locale.h>
 #include <stdlib.h>
-
+#include "Utils.h"
 using namespace std;
 
 void separacion();
@@ -27,7 +27,7 @@ void separacion();
 int main(int argv, char** argc) {
 	setlocale(LC_ALL, "");
 	int n;
-	cout << "Cuantos Clientes ingresaran a la cola: "; cin >> n;
+	n = Utils::Validation::validation_numbers<int>("Cuantos Clientes ingresaran a la cola:  ");
 	cout << endl;
 	system("cls");
 	separacion();
