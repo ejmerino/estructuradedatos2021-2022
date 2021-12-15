@@ -52,6 +52,20 @@ float lambda_division_parametros(float a, float b) {
 	}(a, b);
 	return res;
 }
+float lambda_porcentaje_parametros(float a, float b) {
+	float res = [&a = b, b](float x, float y)->float {
+		std::cout << y/100  << std::endl;
+		return 0.0f;
+	}(a, b);
+	return res;
+}
+float lambda_cmam_parametros(float a, float b) {
+	float res = [&a = b, b](float x, float y)->float {
+		std::cout << y * 100 << std::endl;
+		return 0.0f;
+	}(a, b);
+	return res;
+}
 
 int main() {
 	setlocale(LC_ALL,"");
@@ -119,7 +133,32 @@ int main() {
 		case 3:
 			std::cout << "\nUsted Escogió la Lambda = [&] ( parametros ) -> return { body }" << endl;
 		case 4:
-			std::cout << "\nUsted Escogió la Lambda = [&, i] ( parametros ) -> return { body }" << endl;
+			system("cls");
+			do {
+				std::cout << "\nUsted Escogió la Lambda = [&, i] ( parametros ) -> return { body }" << endl;
+				b = Utils::Validation::validation_numbers<float>("\nIngrese un numero: ");
+				std::cout << "\n¿Qué desea hacer?" << endl;
+				std::cout << "\n1.-Sacar el porcentaje de un numero " << endl;
+				std::cout << "\n2.-Transformar de (cm) a (m)" << endl;
+				option = Utils::Validation::validation_numbers<int>("\nIngrese su opción");
+				switch (option) {
+				case 1:
+					std::cout << "\nPorcentaje es: ";
+					lambda_porcentaje_parametros(a,b);
+					break;
+				case 2:
+					std::cout << "\nEl numero tranformado a (m) es: ";
+					lambda_cmam_parametros(a, b);
+					break;
+				default:
+					std::cout << "\nIngrese una opción Válida!!";
+					break;
+				}
+				std::cout << "\n¿Desea realizar otra vez la operación? (S/N): ";
+				std::cin >> option2;
+
+			} while (option2 == 's' or option2 == 'S');
+			break;
 		case 5:
 			std::cout << "\nUsted Escogió la Lambda = [=,&i] ( parametros ) -> return { body }" << endl;
 		default:

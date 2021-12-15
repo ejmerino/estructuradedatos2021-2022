@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.0.31919.166
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Deber 02 - Expresiones lambda", "Deber 02 - Expresiones lambda\Deber 02 - Expresiones lambda.vcxproj", "{CF012AEE-7CF5-418A-81EE-8AD5720AF3C2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Deber 02 - Expresiones lambda", "Deber 02 - Expresiones lambda.vcxproj", "{CF012AEE-7CF5-418A-81EE-8AD5720AF3C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +26,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {23B16833-304A-4C87-81A0-98175156AC53}
+		SolutionGuid = {00EF4A0B-5098-4333-BA94-7352CB0A9475}
 	EndGlobalSection
 EndGlobal
