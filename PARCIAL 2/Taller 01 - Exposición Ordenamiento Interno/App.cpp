@@ -43,6 +43,20 @@ int main() {
 	case 2:
 		system("cls");
 		std::cout << "Usted Eligió: QuickSort" << std::endl;
+		std::cout << "________________________________________________________________________________________________________________________________________________" << std::endl;
+		std::cout << "                                 VENTAJAS                                     |                          DESVENTAJAS                            |" << std::endl;
+		std::cout << "______________________________________________________________________________|_________________________________________________________________|" << std::endl;
+		std::cout << " Requiere de pocos recursos en comparación a otros métodos de ordenamiento.   | Se complica la implementación si la recursión no es posible.    |" << std::endl;
+		std::cout << "______________________________________________________________________________|_________________________________________________________________|" << std::endl;
+		std::cout << " En la mayoría de los casos, se requiere aproximadamente N log N operaciones. | Peor caso, se requiere N2                                       |" << std::endl;
+		std::cout << "______________________________________________________________________________|_________________________________________________________________|" << std::endl;
+		std::cout << " Ciclo interno es extremadamente corto.                                       | Un simple error en la implementación puede pasar sin detección, |" << std::endl;
+		std::cout << "                                                                              | lo que provocaría un rendimiento pésimo.                        |" << std::endl;
+		std::cout << "______________________________________________________________________________|_________________________________________________________________|" << std::endl;
+		std::cout << " No se requiere de espacio adicional durante ejecución (in-place processing). | No es útil para aplicaciones de entrada dinámica, donde se      |" << std::endl;
+		std::cout << "                                                                              | requiere reordenar una lista de elementos con nuevos valores.   |" << std::endl;
+		std::cout << "______________________________________________________________________________|_________________________________________________________________|" << std::endl;
+		system("pause");
 		break;
 	case 3:
 		system("cls");
