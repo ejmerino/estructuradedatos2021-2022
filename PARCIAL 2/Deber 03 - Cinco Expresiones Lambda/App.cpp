@@ -101,6 +101,43 @@ float lambda_valor_iva(float a) {
 	return res(a);
 }
 
+float lambda_celsius_to_fahrenheit(float a) {
+	float res = [=](float x)->float {
+		
+		std::cout << (x*1.8)+32 << std::endl;
+		return 0.0f;
+	}(a);
+	return res;
+}
+
+float lambda_fahrenheit_to_celsius(float a) {
+	float res = [=](float x)->float {
+
+		std::cout << (x-32)/1.8 << std::endl;
+		return 0.0f;
+	}(a);
+	return res;
+}
+
+
+float lambda_perrault_hombres(float a, float b) {
+	float res = [=, &a,&b](float x, float y) -> float{
+		
+		std::cout << 50 + ((x - 150) * 3) / 4 + (y - 20) / 4 << std::endl;
+		return 0.0f;
+	}(a, b);
+	return res;
+}
+
+float lambda_perrault_mujeres(float a, float b) {
+	float res = [=, &a, &b](float x, float y) -> float {
+
+		std::cout << (50 + ((x - 150) * 3) / 4 + (y - 20) / 4) * 0.9 << std::endl;
+		return 0.0f;
+	}(a, b);
+	return res;
+}
+
 int main() {
 	setlocale(LC_ALL,"");
 	float a = 0.0f;
@@ -164,7 +201,32 @@ int main() {
 			} while (option2 == 's' or option2 == 'S');
 			break;
 		case 2:
-			std::cout << "\nUsted Escogió la Lambda = [=] ( parametros ) -> return { body }" << endl;
+			system("cls");
+			do {
+				std::cout << "\nUsted Escogió la Lambda = [=] ( parametros ) -> return { body }" << endl;
+				a = Utils::Validation::validation_numbers<float>("\nIngrese un numero: ");
+				std::cout << "\n¿Qué desea hacer?" << endl;
+				std::cout << "\n1.-Transformacion grados Cº a grados Fº" << endl;
+				std::cout << "\n2.-Transformacion grados Fº a grados Cº" << endl;
+				option = Utils::Validation::validation_numbers<int>("\nIngrese su opción");
+				switch (option) {
+				case 1:
+					std::cout << "\nLa temperatura en grados Fahrenheit es: ";
+					lambda_celsius_to_fahrenheit(a);
+					break;
+				case 2:
+					std::cout << "\nLa temperatura en grados Celsius es: ";
+					lambda_fahrenheit_to_celsius(a);
+					break;
+				default:
+					std::cout << "\nIngrese una opción Válida!";
+					break;
+				}
+				std::cout << "\n¿Desea realizar otra vez la operación? (S/N): ";
+				std::cin >> option2;
+			} while (option2 == 's' or option2 == 'S');
+			break;
+			
 		case 3:
 			std::cout << "\nUsted Escogió la Lambda = [&] ( parametros ) -> return { body }" << endl;
 			a = Utils::Validation::validation_numbers<float>("\nIngrese un numero");
@@ -200,7 +262,32 @@ int main() {
 			} while (option2 == 's' or option2 == 'S');
 			break;
 		case 5:
-			std::cout << "\nUsted Escogió la Lambda = [=,&i] ( parametros ) -> return { body }" << endl;
+			system("cls");
+			do {
+				std::cout << "\nUsted Escogió la Lambda = [=,&i] ( parametros ) -> return { body }" << endl;
+				a = Utils::Validation::validation_numbers<float>("\nIngrese su estatura en cm:");
+				b = Utils::Validation::validation_numbers<float>("\nIngrese su edad:");
+				std::cout << "\n¿Qué desea hacer?" << endl;
+				std::cout << "\n1.-Formula de Perrault Dry para el peso ideal (Hombres)" << endl;
+				std::cout << "\n2.-Formula de Perrault Dry para el peso ideal (Mujeres)" << endl;
+				option = Utils::Validation::validation_numbers<int>("\nIngrese su opción");
+				switch (option) {
+				case 1:
+					std::cout << "\nSu peso ideal es: ";
+					lambda_perrault_hombres(a,b);
+					break;
+				case 2:
+					std::cout << "\nSu peso ideal es: ";
+					lambda_perrault_mujeres(a, b);
+					break;
+				default:
+					std::cout << "\nIngrese una opción Válida!";
+					break;
+				}
+				std::cout << "\n¿Desea realizar otra vez la operación? (S/N): ";
+				std::cin >> option2;
+			} while (option2 == 's' or option2 == 'S');
+			break;
 		default:
 			std::cout << "\nIngrese una opción valida!" << endl;
 			break;
