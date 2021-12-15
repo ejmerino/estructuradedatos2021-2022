@@ -1,14 +1,14 @@
 ﻿/*
 //////////////////////////////////////////////////
 	Universidad de las Fuerzas Armadas - ESPE	 ||
-	Deber 02 - Parcial 2 - Expresiones Lambda    ||
+	Deber 03 - Parcial 2 - Expresiones Lambda    ||
 	Autores:									 ||
 	-Jhoel Chicaiza								 ||
 	-Josué Merino								 ||
 	-Pablo Yanez							     ||
 	-Daniel Vizcarra							 ||
-	-Fecha de Creación: 11 / 12 / 2021			 ||
-	-Fecha de Modificación: 13 / 12 / 2021		 ||
+	-Fecha de Creación: 14 / 12 / 2021			 ||
+	-Fecha de Modificación: 15 / 12 / 2021		 ||
 //////////////////////////////////////////////////
 */
 
