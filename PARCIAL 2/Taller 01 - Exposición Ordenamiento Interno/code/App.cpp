@@ -61,6 +61,15 @@ int main() {
 	case 3:
 		system("cls");
 		std::cout << "Usted Eligió: ShellSort" << std::endl;
+		std::cout << "_________________________________________________________________________________________________________________________________________________________________________________|" << std::endl;
+		std::cout << "|                                  VENTAJAS				  |                              DESVENTAJAS                                                             |" << std::endl;
+		std::cout << "|_________________________________________________________________________|______________________________________________________________________________________________________|" << std::endl;
+		std::cout << "|Es un algoritmo muy simple teniendo un tiempo de ejecución aceptable.    | Su complejidad es difícil de calcular y depende mucho de la secuencia de incrementos que utilice.    |" << std::endl;
+		std::cout << "|_________________________________________________________________________|______________________________________________________________________________________________________|" << std::endl;
+		std::cout << "|No requiere memoria adicional.                                           | Shell Sort es un algoritmo no estable porque se puede perder el orden relativo inicial con facilidad.|" << std::endl;
+		std::cout << "|_________________________________________________________________________|______________________________________________________________________________________________________|" << std::endl;
+		std::cout << "|Fácil implementación.                                                    | Realiza numerosas comparaciones e intercambios.                                                      |" << std::endl;
+		std::cout << "__________________________________________________________________________|______________________________________________________________________________________________________|" << std::endl;
 		break;
 	case 4:
 		system("cls");
