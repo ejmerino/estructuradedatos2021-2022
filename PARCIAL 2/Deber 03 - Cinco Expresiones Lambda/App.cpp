@@ -1,14 +1,14 @@
-/*
+ï»¿/*
 //////////////////////////////////////////////////
 	Universidad de las Fuerzas Armadas - ESPE	 ||
 	Deber 02 - Parcial 2 - Expresiones Lambda    ||
 	Autores:									 ||
 	-Jhoel Chicaiza								 ||
-	-Josué Merino								 ||
+	-JosuÃ© Merino								 ||
 	-Pablo Yanez							     ||
 	-Daniel Vizcarra							 ||
-	-Fecha de Creación: 11 / 12 / 2021			 ||
-	-Fecha de Modificación: 13 / 12 / 2021		 ||
+	-Fecha de CreaciÃ³n: 11 / 12 / 2021			 ||
+	-Fecha de ModificaciÃ³n: 13 / 12 / 2021		 ||
 //////////////////////////////////////////////////
 */
 
@@ -67,36 +67,71 @@ float lambda_cmam_parametros(float a, float b) {
 	return res;
 }
 
+float lambda_valor_iva(float a) {
+	auto res = [&](float a) -> float {
+		float iva = a * 0.12;
+		float total = a + iva;
+		float descuento = total * 0.15;
+		float precio_con_iva = a + iva;
+		float total_final = total - descuento;
+
+		cout << "El subtotal es: " << a << endl;
+		cout << "El iva es: " << iva << endl;
+		cout << "El total es: " << total << endl;
+		cout << "El Precio con iva es: " << precio_con_iva << endl;
+		if (precio_con_iva >= 1.0f && precio_con_iva <= 99.0f)
+		{
+			descuento = (5 * descuento) / 100;
+			cout << "El descuento es 5 ";
+		}
+		else if (precio_con_iva >= 100.0f && precio_con_iva <= 999.0f)
+		{
+			descuento = (10 * descuento) / 100;
+			cout << "El descuento es 10 ";
+		}
+		else if (precio_con_iva >= 1000.0f && precio_con_iva <= 10000.0f)
+		{
+			descuento = (15 * descuento) / 100;
+			cout << "El descuento es 15 ";
+		}
+		cout << "\nEl total final es: " << total_final << endl;
+
+		return a;
+	};
+	return res(a);
+}
+
 int main() {
 	setlocale(LC_ALL,"");
 	float a = 0.0f;
 	float b = 0.0f;
+	float lambda_valor_iva(float);
 	int option;
 	int main_option_s;
 	char option2 = { };
 	char option_main = { };
 	std::cout << "UNIVERSIDAD DE LAS FUERZAS ARMADAS - ESPE" << endl;
 	do {
-		std::cout << "\n¿Qué expresión lambda desea hacer?" << endl;
+		std::cout << "\nÂ¿QuÃ© expresiÃ³n lambda desea hacer?" << endl;
 		std::cout << "\n1.- [] ( parametros ) -> return { body }";
 		std::cout << "\n2.- [=] ( parametros ) -> return { body }";
 		std::cout << "\n3.- [&] ( parametros ) -> return { body }";
 		std::cout << "\n4.- [&, i] ( parametros ) -> return { body }";
 		std::cout << "\n5.- [=,&i] ( parametros ) -> return { body }"<<endl;
-		main_option_s = Utils::Validation::validation_numbers<int>("\nIngrese su opción");
+		main_option_s = Utils::Validation::validation_numbers<int>("\nIngrese su opciÃ³n");
 		switch (main_option_s) {
 		case 1:
 			system("cls");
 			do {
-				std::cout << "\nUsted Escogió la Lambda = [] ( parametros ) -> return { body }" << endl;
+				std::cout << "\nUsted EscogiÃ³ la Lambda = [] ( parametros ) -> return { body }" << endl;
 				a = Utils::Validation::validation_numbers<float>("\nIngrese un numero");
 				b = Utils::Validation::validation_numbers<float>("\nIngrese otro numero");
-				std::cout << "\n¿Qué desea hacer?" << endl;
+				std::cout << "\nÂ¿QuÃ© desea hacer?" << endl;
 				std::cout << "\n1.- Suma";
 				std::cout << "\n2.- Resta";
-				std::cout << "\n3.- Multiplicación";
-				std::cout << "\n4.- División" << endl;
-				option = Utils::Validation::validation_numbers<int>("\nIngrese su opción");
+				std::cout << "\n3.- MultiplicaciÃ³n";
+				std::cout << "\n4.- DivisiÃ³n" << endl;
+				option = Utils::Validation::validation_numbers<int>("\nIngrese su opciÃ³n");
 				switch (option) {
 				case 1:
 					std::cout << "\nLa Suma es: ";
@@ -107,7 +142,7 @@ int main() {
 					lambda_resta_parametros(a, b);
 					break;
 				case 3:
-					std::cout << "\nLa Multiplicación es: ";
+					std::cout << "\nLa MultiplicaciÃ³n es: ";
 					lambda_multiplicacion_parametros(a, b);
 					break;
 				case 4:
@@ -115,32 +150,37 @@ int main() {
 						std::cout << "No se puede dividir para 0";
 					}
 					else {
-						std::cout << "\nLa División es: ";
+						std::cout << "\nLa DivisiÃ³n es: ";
 						lambda_division_parametros(a, b);
 					}
 					break;
 				default:
-					std::cout << "\nIngrese una opción Válida!!";
+					std::cout << "\nIngrese una opciÃ³n VÃ¡lida!!";
 					break;
 				}
-				std::cout << "\n¿Desea realizar otra operación? (S/N): ";
+				std::cout << "\nÂ¿Desea realizar otra operaciÃ³n? (S/N): ";
 				std::cin >> option2;
 				
 			} while (option2 == 's' or option2 == 'S');
 			break;
 		case 2:
-			std::cout << "\nUsted Escogió la Lambda = [=] ( parametros ) -> return { body }" << endl;
+			std::cout << "\nUsted EscogiÃ³ la Lambda = [=] ( parametros ) -> return { body }" << endl;
 		case 3:
-			std::cout << "\nUsted Escogió la Lambda = [&] ( parametros ) -> return { body }" << endl;
+			std::cout << "\nUsted EscogiÃ³ la Lambda = [&] ( parametros ) -> return { body }" << endl;
+			a = Utils::Validation::validation_numbers<float>("\nIngrese un numero");
+			lambda_valor_iva(a);
+			std::cout << endl;
+			system("pause");
+			break;
 		case 4:
 			system("cls");
 			do {
-				std::cout << "\nUsted Escogió la Lambda = [&, i] ( parametros ) -> return { body }" << endl;
+				std::cout << "\nUsted EscogiÃ³ la Lambda = [&, i] ( parametros ) -> return { body }" << endl;
 				b = Utils::Validation::validation_numbers<float>("\nIngrese un numero: ");
-				std::cout << "\n¿Qué desea hacer?" << endl;
+				std::cout << "\nÂ¿QuÃ© desea hacer?" << endl;
 				std::cout << "\n1.-Sacar el porcentaje de un numero " << endl;
 				std::cout << "\n2.-Transformar de (cm) a (m)" << endl;
-				option = Utils::Validation::validation_numbers<int>("\nIngrese su opción");
+				option = Utils::Validation::validation_numbers<int>("\nIngrese su opciÃ³n");
 				switch (option) {
 				case 1:
 					std::cout << "\nPorcentaje es: ";
@@ -151,22 +191,22 @@ int main() {
 					lambda_cmam_parametros(a, b);
 					break;
 				default:
-					std::cout << "\nIngrese una opción Válida!!";
+					std::cout << "\nIngrese una opciÃ³n VÃ¡lida!!";
 					break;
 				}
-				std::cout << "\n¿Desea realizar otra vez la operación? (S/N): ";
+				std::cout << "\nÂ¿Desea realizar otra vez la operaciÃ³n? (S/N): ";
 				std::cin >> option2;
 
 			} while (option2 == 's' or option2 == 'S');
 			break;
 		case 5:
-			std::cout << "\nUsted Escogió la Lambda = [=,&i] ( parametros ) -> return { body }" << endl;
+			std::cout << "\nUsted EscogiÃ³ la Lambda = [=,&i] ( parametros ) -> return { body }" << endl;
 		default:
-			std::cout << "\nIngrese una opción valida!" << endl;
+			std::cout << "\nIngrese una opciÃ³n valida!" << endl;
 			break;
 		}
 		system("cls");
-		std::cout << "\n¿Desea realizar otra expresión lambda? (S/N): ";
+		std::cout << "\nÂ¿Desea realizar otra expresiÃ³n lambda? (S/N): ";
 		std::cin >> option_main;
 	} while (option_main=='s' or option_main=='S');
 	system("exit");
